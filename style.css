@@ -7,7 +7,8 @@
     grid-gap:0.8px;
     position: fixed;
     top: 20vh;
-    left: 60vh;
+    left: 65vh;
+    box-shadow: 0px 0px 20px 0px grey;
 }
 
 .grid-item{
@@ -17,7 +18,22 @@
     border-radius: 5px;
 }
 
+.buttons{
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: end;
+    gap: 100px;
+}
 #reset-button{
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 80px;
+    align-self: flex-end;
+    border-radius: 5px;
+}
+#steplist-slider{
+    height: 30px;
+    width: 150px;
+    align-self: flex-end;
+    border-radius: 5px;
 }
