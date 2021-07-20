@@ -15,6 +15,7 @@ body{
     border: 0.5px solid rgba(0, 0, 0, 0.8);
     width: auto;
     height: auto;
+    transition: 0.1s ease-in-out;
 }
 .buttons{
     display: flex;
@@ -40,13 +41,14 @@ body{
     font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     transition: 0.2s ease-in-out;
-    background-color: #acd1d1;
+    background-color: #D0D0D0;
 }
 
 #reset-button:hover{
     transform: scale(0.9);
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    opacity: 0.8;
 }
 #steplist-slider{
     -webkit-appearance: none;  /* Override default CSS styles */
@@ -61,4 +63,18 @@ body{
     align-self: flex-end;
     cursor: pointer;
     border-radius: 3%;
+}
+
+#steplist-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #D0D0D0;
+    cursor: pointer;
+  }
+
+#steplist-slider:hover{
+    opacity: 1;
 }

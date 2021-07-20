@@ -7,7 +7,7 @@ function makeGrid(gridDimensions){
     for (let item = 0; item < Math.pow(gridDimensions,2); item++) {
         const newGridItem = document.createElement('div');
         newGridItem.classList.add("grid-item")
-        newGridItem.style.background = 'white';
+        newGridItem.style.background = '#D0D0D0';
         grid.appendChild(newGridItem)
     }
     grid.style["grid-template-columns"] = `repeat(${gridDimensions}, auto)`
@@ -15,6 +15,7 @@ function makeGrid(gridDimensions){
     gridItems.forEach(function(gridItem){
             gridItem.addEventListener('mouseover', function(e){
                 e.target.style.background = '#c2b280';
+                
             });
 });
 }
@@ -27,7 +28,7 @@ steplist.addEventListener('change', function(e){
 resetButton.addEventListener('click', ()=>{
     const gridItems = document.querySelectorAll('.grid-item');
     gridItems.forEach(gridItem => {
-        gridItem.style.background = 'white';
+        gridItem.style.background = '#D0D0D0';
     });
 });
 
