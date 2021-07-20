@@ -6,7 +6,6 @@ body{
     grid-template-columns: repeat(20, auto);
     width: 60vh;
     height: 60vh;
-    grid-gap:0.8px;
     position: fixed;
     top: 20vh;
     left: 65vh;
@@ -16,7 +15,6 @@ body{
     border: 0.5px solid rgba(0, 0, 0, 0.8);
     width: auto;
     height: auto;
-    border-radius: 5px;
 }
 .buttons{
     display: flex;
